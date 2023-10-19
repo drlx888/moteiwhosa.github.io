@@ -125,7 +125,7 @@
     height: 0.5rem;
     border-radius: 50%;
     background-color: wheat;
-    opacity: 100%;
+    opacity: 0%;
     transition: opacity ease 250ms;
 }
 
