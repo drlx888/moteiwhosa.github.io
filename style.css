@@ -41,9 +41,12 @@
 /* home end */
 
 /*bout */
-
 .about {
     background-image: url(aset/bg32.jpg);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 
 
@@ -55,9 +58,8 @@
 .slider-wrapper {
     position: relative;
     max-width: 48rem;
-    margin: auto;
-    margin-top: 6%;
 }
+
 
 .slider {
     display: flex;
@@ -74,7 +76,7 @@
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
-    animation: slide 16s infinite;
+    animation: slide 20s infinite;
 }
 
 @keyframes slide {
@@ -115,6 +117,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    
 }
 
 .slider-nav a {
