@@ -43,10 +43,10 @@
 /*bout */
 .about {
     background-image: url(aset/bg32.jpg);
-    justify-content: center;
-    display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    display: flex;
 }
 
 
@@ -55,14 +55,15 @@
 }
 
 
+
 .slider-wrapper {
-    position: relative;
     max-width: 48rem;
 }
 
 
 .slider {
     display: flex;
+    max-width: 100%;
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -77,6 +78,8 @@
     scroll-snap-align: start;
     object-fit: cover;
     animation: slide 20s infinite;
+    max-width: 100%;
+    height: auto;
 }
 
 @keyframes slide {
@@ -109,29 +112,6 @@
     }
 }
 
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    
-}
-
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: wheat;
-    opacity: 0%;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav {
-    opacity: 1;
-}
 
 /* about end */
 
