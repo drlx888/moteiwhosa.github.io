@@ -172,6 +172,7 @@ nav a:hover {
     .navbar ul {
         flex-direction: column;
         top: 0 ;
+        margin-left: 12%;
     }
 
     .navbar li {
